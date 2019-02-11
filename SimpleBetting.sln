@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleBetting.WebAPI", "SimpleBetting.API\SimpleBetting.WebAPI.csproj", "{EA526CA7-789B-4B8C-9ABD-E968DFB741BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleBetting.Data", "SimpleBetting.Data\SimpleBetting.Data.csproj", "{F401127D-ADFC-43F7-B1C7-F5EC554983D0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleBetting.Repo", "SimpleBetting.Repo\SimpleBetting.Repo.csproj", "{6CCA253F-51AF-46D8-9BAD-1CFD4A28D974}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleBetting.Service", "SimpleBetting.Service\SimpleBetting.Service.csproj", "{58C1B1A4-3832-4C8D-A06F-F8E0C7A1B0CE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleBetting.Tests", "SimpleBetting.Tests\SimpleBetting.Tests.csproj", "{2B4E7554-9572-4643-A8B1-E6AFB507FD87}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4B2A287D-213B-4465-A7DC-7AE2FFE76794}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{667274E4-C479-4CE6-BE3B-E7D1DE2BF25E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA526CA7-789B-4B8C-9ABD-E968DFB741BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA526CA7-789B-4B8C-9ABD-E968DFB741BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA526CA7-789B-4B8C-9ABD-E968DFB741BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA526CA7-789B-4B8C-9ABD-E968DFB741BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F401127D-ADFC-43F7-B1C7-F5EC554983D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F401127D-ADFC-43F7-B1C7-F5EC554983D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F401127D-ADFC-43F7-B1C7-F5EC554983D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F401127D-ADFC-43F7-B1C7-F5EC554983D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CCA253F-51AF-46D8-9BAD-1CFD4A28D974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CCA253F-51AF-46D8-9BAD-1CFD4A28D974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CCA253F-51AF-46D8-9BAD-1CFD4A28D974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CCA253F-51AF-46D8-9BAD-1CFD4A28D974}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58C1B1A4-3832-4C8D-A06F-F8E0C7A1B0CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58C1B1A4-3832-4C8D-A06F-F8E0C7A1B0CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58C1B1A4-3832-4C8D-A06F-F8E0C7A1B0CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58C1B1A4-3832-4C8D-A06F-F8E0C7A1B0CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B4E7554-9572-4643-A8B1-E6AFB507FD87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B4E7554-9572-4643-A8B1-E6AFB507FD87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B4E7554-9572-4643-A8B1-E6AFB507FD87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B4E7554-9572-4643-A8B1-E6AFB507FD87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EA526CA7-789B-4B8C-9ABD-E968DFB741BC} = {4B2A287D-213B-4465-A7DC-7AE2FFE76794}
+		{F401127D-ADFC-43F7-B1C7-F5EC554983D0} = {4B2A287D-213B-4465-A7DC-7AE2FFE76794}
+		{6CCA253F-51AF-46D8-9BAD-1CFD4A28D974} = {4B2A287D-213B-4465-A7DC-7AE2FFE76794}
+		{58C1B1A4-3832-4C8D-A06F-F8E0C7A1B0CE} = {4B2A287D-213B-4465-A7DC-7AE2FFE76794}
+		{2B4E7554-9572-4643-A8B1-E6AFB507FD87} = {667274E4-C479-4CE6-BE3B-E7D1DE2BF25E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39F5A779-B9E8-4C42-83AA-79274B5494C3}
+	EndGlobalSection
+EndGlobal
