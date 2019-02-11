@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "e2fc66fa-0f3b-40ea-a39f-af323d045a66",
+		"name": "SimpleBettingAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44344/api/matches",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44344/api/matches",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44344",
+					"path": [
+						"api",
+						"matches"
+					]
+				},
+				"description": "Gets all matches with teams and offers."
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44344/api/matches/{id}",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44344/api/matches/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44344",
+					"path": [
+						"api",
+						"matches",
+						"3"
+					]
+				},
+				"description": "Gets specific match by matchId. Replace {id} with matchId number."
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44344/api/matches/sport/{id}",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44344/api/matches/sport/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44344",
+					"path": [
+						"api",
+						"matches",
+						"sport",
+						"3"
+					]
+				},
+				"description": "Gets all the matches for specific sportId. Replace {id} with sportId number."
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44344/api/wallet",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44344/api/wallet",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44344",
+					"path": [
+						"api",
+						"wallet"
+					]
+				},
+				"description": "Gets current wallet balance"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44344/api/wallet/transactions",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44344/api/wallet/transactions",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44344",
+					"path": [
+						"api",
+						"wallet",
+						"transactions"
+					]
+				},
+				"description": "Gets wallet transactions history.\n0 - payment\n1 - payout"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44344/api/wallet/transactions/create/payment",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\": 50\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44344/api/wallet/transactions/create/payment",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44344",
+					"path": [
+						"api",
+						"wallet",
+						"transactions",
+						"create",
+						"payment"
+					]
+				},
+				"description": "Creates new transaction for adding funds to wallet."
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44344/api/tickets",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44344/api/tickets",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44344",
+					"path": [
+						"api",
+						"tickets"
+					]
+				},
+				"description": "Gets all created tickets."
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44344/api/tickets/create",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\"selectedMatches\": [{\r\n\t\t\t\t\"id\": 1,\r\n\t\t\t\t\"selectedOddType\": 0,\r\n\t\t\t\t\"selectedOddValue\": 1.5,\r\n\t\t\t\t\"isTopOffer\": false\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"id\": 2,\r\n\t\t\t\t\"selectedOddType\": 2,\r\n\t\t\t\t\"selectedOddValue\": 1.3,\r\n\t\t\t\t\"isTopOffer\": false\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"stake\": 50\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44344/api/tickets/create",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44344",
+					"path": [
+						"api",
+						"tickets",
+						"create"
+					]
+				},
+				"description": "Creates new ticket (places bet)"
+			},
+			"response": []
+		}
+	]
+}
