@@ -30,7 +30,6 @@ namespace SimpleBetting.WebAPI
             services.AddDbContext<SimpleBettingContext>(o =>
                 o.UseSqlServer(Configuration.GetConnectionString("SimpleBettingDB")));
 
-            //services.AddScoped<IMatchRepository, MatchRepositoryMock>();
             services.AddScoped<IMatchRepository, MatchRepository>();
             services.AddScoped<ITransactionRepository, TransactionRepository>();
             services.AddScoped<ITicketRepository, TicketRepository>();

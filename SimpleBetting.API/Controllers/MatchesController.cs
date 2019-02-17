@@ -38,7 +38,7 @@ namespace SimpleBetting.WebAPI.Controllers
         }
 
         [HttpGet("sport/{sportId}")]
-        public IActionResult GetMatchesBySportName(int sportId)
+        public IActionResult GetMatchesBySportId(int sportId)
         {
             var matches = _matchRepository.GetMatchesBySportId(sportId);
             if (matches.Count == 0) return NotFound();

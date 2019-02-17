@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using SimpleBetting.Data.Entities;
 using SimpleBetting.Repo.Interfaces;
+using SimpleBetting.Repo.Repositories;
 
-namespace SimpleBetting.Repo.Repositories
+namespace SimpleBetting.Repo.Mocks
 {
     public class MatchRepositoryMock : GenericRepository<Match>, IMatchRepository
     {
@@ -106,7 +107,7 @@ namespace SimpleBetting.Repo.Repositories
 
         public List<Match> GetMatchesBySportId(int sportId)
         {
-            return null;
+            return _matches.Where(m => m.Teams.Any(t => t.SportId.Equals(sportId))).ToList();
         }
     }
 }
